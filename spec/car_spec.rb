@@ -3,7 +3,8 @@ require './lib/car.rb'
 describe Car do
   subject { described_class.new }
   it 'should check the color of the car' do
-    expect(subject.paint).to eq 'blue'
+    subject.paint('blue')
+    expect(subject.color).to eq 'blue'
   end
 
   let(:driver) { instance_double('Driver') }
