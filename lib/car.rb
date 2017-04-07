@@ -2,11 +2,7 @@ class Car
 
   attr_accessor :color
 
-  def initialize
+  def paint
     @color = 'blue'
-  end
-
-  def paint(color)
-    @color = color
   end
 end
